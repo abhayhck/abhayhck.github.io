@@ -8,13 +8,13 @@ const PROJECTS = [
   {
     id: "hostel-management-system",
     title: "Hostel Management System",
-    tech: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy"],
+    tech: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy","JWT","Gemini API", "sqlglot"],
     summary: "REST backend for hostel operations: room allocation, complaints and fees, with role-based auth.",
     bullets: [
-      "Designed a normalized PostgreSQL database with 7+ relational tables and foreign key constraints.",
-      "Developed REST APIs using FastAPI for room allocation, complaints, fee management and student records.",
-      "Implemented JWT authentication and role-based authorization for Admin and Student users.",
-      "Integrated backend APIs with an HTML, CSS and JavaScript frontend."
+      "Designed a normalized PostgreSQL database with 7+ relational tables and built REST APIs using FastAPI for room allocation, complaints, fee management and student records.",
+      "Implemented JWT authentication and role-based authorization for Admin and Student users, with admin-only endpoints and per-student data filtering.",
+      "Built an admin-only AI assistant using the Gemini API that turns natural-language questions into SQL with schema-aware prompts, integrated into the HTML, CSS and JavaScript frontend as an Ask AI tab.",
+      "Secured the assistant with a sqlglot validator, read-only PostgreSQL role, 200-row cap, rate limiting and audit logging, and tested it with adversarial prompts."
     ],
     github: "https://github.com/abhayhck/Hostel_Management_System",
     // Add as many screenshots as you like — just keep the filenames matching.
