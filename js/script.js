@@ -25,6 +25,27 @@ const PROJECTS = [
     ]
   },
   {
+    id: "callrecall-android-app",
+    title: "CallRecall",
+    tech: ["Kotlin", "Room", "MVVM", "Coroutines", "Material Design"],
+    summary: "Android app for notes linked to phone numbers, with a floating shortcut during calls and local data storage.",
+    bullets: [
+      "Built a caller-linked note-taking app using Kotlin, MVVM and Room.",
+      "Implemented a draggable call overlay with tap-to-open and drag-to-dismiss actions.",
+      "Developed autosaving notes, contact-name lookup, search and sorting.",
+      "Standardized international phone numbers for consistent storage and caller matching.",
+      "Added backup and restore with optional password encryption and per-note conflict resolution.",
+      "Designed a minimalist interface with light and dark themes."
+    ],
+    github: "https://github.com/abhayhck/CallRecall",
+    screenshots: [
+      "assets/projects/callrecall-notes.jpg",
+      "assets/projects/callrecall-editor.jpg",
+      "assets/projects/callrecall-bubble.jpg",
+      "assets/projects/callrecall-backup.jpg"
+    ]
+  },
+  {
     id: "chatx-android-app",
     title: "ChatX Android App",
     tech: ["Kotlin", "Firebase"],
